@@ -1,17 +1,16 @@
 {
     "domain": "nilm_energy_disaggregation",
     "name": "NILM Energy Disaggregation",
-    "codeowners": ["@dtanonDev"],
-    "config_flow": true,
-    "dependencies": [],
     "documentation": "https://github.com/dtanonDev/nilm_energy_disaggregation",
-    "homekit": {},
-    "iot_class": "local_polling",
     "issue_tracker": "https://github.com/dtanonDev/nilm_energy_disaggregation/issues",
+    "dependencies": [],
+    "codeowners": ["@dtanonDev"],
     "requirements": [
         "numpy>=1.21.0,<2.0.0",
         "scikit-learn>=0.24.0,<2.0.0",
         "pandas>=1.3.0,<2.0.0"
     ],
-    "version": "v1.0.3"
+    "version": "v1.0.4",
+    "config_flow": true,
+    "iot_class": "local_polling"
 }
