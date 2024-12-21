@@ -1,6 +1,10 @@
 """Constants for the NILM Energy Disaggregation integration."""
+from homeassistant.const import Platform
 
 DOMAIN = "nilm_energy_disaggregation"
+
+# Platforms that the integration supports
+PLATFORMS: list[Platform] = [Platform.SENSOR]
 
 # Configuration keys
 CONF_MODEL_PATH = "model_path"
