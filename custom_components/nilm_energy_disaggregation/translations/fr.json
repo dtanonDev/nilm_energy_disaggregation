@@ -1,0 +1,89 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Désagrégation d'Énergie NILM",
+                "description": "Configurez la désagrégation d'énergie NILM pour surveiller vos appareils. Vous aurez besoin d'un capteur de puissance qui mesure la consommation totale.",
+                "data": {
+                    "name": "Nom",
+                    "source_sensor": "Capteur de Puissance",
+                    "scan_interval": "Intervalle de Scan (secondes)"
+                }
+            },
+            "devices": {
+                "title": "Configuration des Appareils",
+                "description": "Configurez les appareils à surveiller et les paramètres de détection.",
+                "data": {
+                    "sensitivity": "Sensibilité de Détection (0.1-1.0)",
+                    "min_power": "Puissance Minimale (W)",
+                    "enable_refrigerator": "Surveiller Réfrigérateur",
+                    "enable_tv": "Surveiller TV",
+                    "enable_microwave": "Surveiller Micro-ondes",
+                    "enable_washing_machine": "Surveiller Lave-linge",
+                    "enable_dishwasher": "Surveiller Lave-vaisselle",
+                    "enable_oven": "Surveiller Four",
+                    "enable_dryer": "Surveiller Sèche-linge",
+                    "enable_air_conditioner": "Surveiller Climatiseur",
+                    "enable_water_heater": "Surveiller Chauffe-eau"
+                }
+            }
+        },
+        "error": {
+            "cannot_connect": "Échec de connexion au capteur",
+            "device_config_error": "Erreur de configuration des appareils"
+        },
+        "abort": {
+            "already_configured": "L'appareil est déjà configuré"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "Options de Désagrégation d'Énergie NILM",
+                "description": "Ajustez les paramètres de détection et l'intervalle de surveillance.",
+                "data": {
+                    "scan_interval": "Intervalle de Scan (secondes)",
+                    "sensitivity": "Sensibilité de Détection (0.1-1.0)",
+                    "min_power": "Puissance Minimale (W)"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "nilm_refrigerator": {
+                "name": "NILM Réfrigérateur",
+                "state_attributes": {
+                    "current_power": "Puissance Actuelle",
+                    "cumulative_runtime": "Temps de Fonctionnement",
+                    "daily_energy": "Énergie Aujourd'hui",
+                    "detection_confidence": "Confiance de Détection"
+                }
+            },
+            "nilm_tv": {
+                "name": "NILM TV"
+            },
+            "nilm_microwave": {
+                "name": "NILM Micro-ondes"
+            },
+            "nilm_washing_machine": {
+                "name": "NILM Lave-linge"
+            },
+            "nilm_dishwasher": {
+                "name": "NILM Lave-vaisselle"
+            },
+            "nilm_oven": {
+                "name": "NILM Four"
+            },
+            "nilm_dryer": {
+                "name": "NILM Sèche-linge"
+            },
+            "nilm_air_conditioner": {
+                "name": "NILM Climatiseur"
+            },
+            "nilm_water_heater": {
+                "name": "NILM Chauffe-eau"
+            }
+        }
+    }
+}
