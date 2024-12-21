@@ -1,7 +1,7 @@
 {
     "domain": "nilm_energy_disaggregation",
     "name": "NILM Energy Disaggregation",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "config_flow": true,
     "documentation": "https://github.com/dtanonDev/nilm_energy_disaggregation",
     "issue_tracker": "https://github.com/dtanonDev/nilm_energy_disaggregation/issues",
