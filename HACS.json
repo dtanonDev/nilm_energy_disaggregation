@@ -1,5 +1,8 @@
 {
     "name": "NILM Energy Disaggregation",
-    "homeassistant": "2023.1.0",
-    "hacs": "1.6.0"
+    "content_in_root": true,
+    "zip_release": true,
+    "filename": "nilm_energy_disaggregation.zip",
+    "hide_default_branch": true,
+    "homeassistant": "2023.1.0"
 }

@@ -1,0 +1,25 @@
+retrain_model:
+  name: Retrain Model
+  description: Retrain the NILM model with current data
+  fields:
+    entity_id:
+      name: Entity
+      description: The NILM device sensor to retrain
+      required: true
+      selector:
+        entity:
+          integration: nilm_energy_disaggregation
+          domain: sensor
+
+reset_daily_energy:
+  name: Reset Daily Energy
+  description: Reset the daily energy counter for a device
+  fields:
+    entity_id:
+      name: Entity
+      description: The NILM device sensor to reset
+      required: true
+      selector:
+        entity:
+          integration: nilm_energy_disaggregation
+          domain: sensor

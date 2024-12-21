@@ -2,19 +2,88 @@
     "config": {
         "step": {
             "user": {
-                "title": "NILM Energy Disaggregation Setup",
-                "description": "Set up your NILM Energy Disaggregation integration",
+                "title": "NILM Energy Disaggregation",
+                "description": "Set up NILM Energy Disaggregation to monitor your appliances. You'll need a power sensor that measures total consumption.",
                 "data": {
-                    "source_sensor": "Energy consumption sensor"
+                    "name": "Name",
+                    "source_sensor": "Power Sensor",
+                    "scan_interval": "Scan Interval (seconds)"
+                }
+            },
+            "devices": {
+                "title": "Device Configuration",
+                "description": "Configure which devices to monitor and detection settings.",
+                "data": {
+                    "sensitivity": "Detection Sensitivity (0.1-1.0)",
+                    "min_power": "Minimum Power (W)",
+                    "enable_refrigerator": "Monitor Refrigerator",
+                    "enable_tv": "Monitor TV",
+                    "enable_microwave": "Monitor Microwave",
+                    "enable_washing_machine": "Monitor Washing Machine",
+                    "enable_dishwasher": "Monitor Dishwasher",
+                    "enable_oven": "Monitor Oven",
+                    "enable_dryer": "Monitor Dryer",
+                    "enable_air_conditioner": "Monitor Air Conditioner",
+                    "enable_water_heater": "Monitor Water Heater"
                 }
             }
         },
         "error": {
-            "cannot_connect": "Failed to connect",
-            "invalid_sensor": "Invalid sensor selected"
+            "cannot_connect": "Failed to connect to sensor",
+            "device_config_error": "Error configuring devices"
         },
         "abort": {
             "already_configured": "Device is already configured"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "NILM Energy Disaggregation Options",
+                "description": "Adjust detection settings and monitoring interval.",
+                "data": {
+                    "scan_interval": "Scan Interval (seconds)",
+                    "sensitivity": "Detection Sensitivity (0.1-1.0)",
+                    "min_power": "Minimum Power (W)"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "nilm_refrigerator": {
+                "name": "NILM Refrigerator",
+                "state_attributes": {
+                    "current_power": "Current Power",
+                    "cumulative_runtime": "Runtime Today",
+                    "daily_energy": "Energy Today",
+                    "detection_confidence": "Detection Confidence"
+                }
+            },
+            "nilm_tv": {
+                "name": "NILM TV"
+            },
+            "nilm_microwave": {
+                "name": "NILM Microwave"
+            },
+            "nilm_washing_machine": {
+                "name": "NILM Washing Machine"
+            },
+            "nilm_dishwasher": {
+                "name": "NILM Dishwasher"
+            },
+            "nilm_oven": {
+                "name": "NILM Oven"
+            },
+            "nilm_dryer": {
+                "name": "NILM Dryer"
+            },
+            "nilm_air_conditioner": {
+                "name": "NILM Air Conditioner"
+            },
+            "nilm_water_heater": {
+                "name": "NILM Water Heater"
+            }
         }
     }
 }
