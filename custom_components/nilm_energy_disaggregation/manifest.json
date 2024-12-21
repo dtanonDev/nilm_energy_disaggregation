@@ -3,7 +3,7 @@
     "name": "NILM Energy Disaggregation",
     "version": "0.1.0",
     "config_flow": true,
-    "documentation": "https://github.com/yourusername/nilm_energy_disaggregation",
+    "documentation": "https://github.com/dtanonDev/nilm_energy_disaggregation",
     "requirements": [
         "numpy>=1.21.0",
         "scikit-learn>=0.24.0",
@@ -16,5 +16,6 @@
     "zeroconf": [],
     "homekit": {},
     "bluetooth": [],
-    "integration_type": "service"
+    "integration_type": "service",
+    "min_ha_version": "2023.1.0"
 }
